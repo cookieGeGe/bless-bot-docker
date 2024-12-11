@@ -1,0 +1,33 @@
+version: "1.0"
+
+services:
+  blessBot:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: bless_bot:v1
+    container_name: blessBot
+
+    volumes:
+      - ./app/main.js:/bless/main.js
+      - ./app/.env:/bless/.env
+      - ./app/user.txt:/bless/user.txt
+      - ./app/proxy.txt:/bless/proxy.txt
+      - ./app/id-8.txt:/bless/id.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
